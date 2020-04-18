@@ -5,10 +5,15 @@ import "./NavigationBar.css";
 
 const NavigationBar = () => {
   return (
-    <Navbar bg="light" expand="lg" data-test="component-navBar">
+    <Navbar
+      style={{ minHeight: "65px" }}
+      bg="light"
+      expand="lg"
+      data-test="component-navBar"
+    >
       <Navbar.Brand href="#home">
-        <Link to="/" className="OverRideLink">
-          Acebook
+        <Link to="/" className="OverRideLink NavBarBrand">
+          ACEBOOK
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,6 +30,9 @@ const NavigationBar = () => {
             </Link>
           </Nav.Link>
         </Nav>
+
+        <p>Hello Nimzy</p>
+
         <Button>hello there</Button>
       </Navbar.Collapse>
     </Navbar>

@@ -2,3 +2,8 @@
   text-decoration: none;
   color: black;
 }
+
+.NavBarBrand{
+  font-size: 1.7em;
+  color: #007bff;
+}
