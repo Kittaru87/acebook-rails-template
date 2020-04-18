@@ -7,6 +7,9 @@
   font-size: 1.7em;
   color: #007bff;
 }
+.NavBarBrand:hover{
+  text-decoration: none;
+}
 
 .User{
   color: #007bff;

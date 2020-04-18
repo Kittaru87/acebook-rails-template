@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "./NavigationBar.css";
 import NavigationBarIcons from "./NavigationBarIcons/NavigationBarIcons";
 
@@ -20,11 +20,6 @@ const NavigationBar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">
-            <Link to="/" className="OverRideLink">
-              Home
-            </Link>
-          </Nav.Link>
           <Nav.Link href="#link">
             <Link to="/profile" className="OverRideLink">
               Profile
