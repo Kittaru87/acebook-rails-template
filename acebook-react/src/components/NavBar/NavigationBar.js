@@ -12,7 +12,7 @@ const NavigationBar = () => {
       expand="lg"
       data-test="component-navBar"
     >
-      <Navbar.Brand href="#home">
+      <Navbar.Brand>
         <Link to="/" className="OverRideLink NavBarBrand">
           ACEBOOK
         </Link>
@@ -20,11 +20,9 @@ const NavigationBar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#link">
-            <Link to="/profile" className="OverRideLink">
-              Profile
-            </Link>
-          </Nav.Link>
+          <Link to="/profile" className="OverRideLink">
+            Profile
+          </Link>
         </Nav>
         <div className="User" style={{ marginRight: "8px" }}>
           Hello Nimzy
