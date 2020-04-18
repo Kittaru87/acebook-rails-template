@@ -1,6 +1,7 @@
-import React, { useReducer, useState } from "react";
+import React, { useReducer } from "react";
 import PostContext from "./PostContext";
 import PostReducer from "./PostReducer";
+import * as TYPES from "../Types";
 
 //PostState gathers resources to dispatch to reducer to manipulate state
 const PostState = (props) => {
@@ -8,10 +9,17 @@ const PostState = (props) => {
 
   const [state, dispatch] = useReducer(PostReducer, initialState);
 
-  const getPosts = async () => {};
+  const changeSomething = async (str) => {
+    dispatch({
+      type: TYPES.CHANGE_SOMETHING,
+      payload: str,
+    });
+  };
 
   return (
-    <PostContext.Provider value={{ something: state.something }}>
+    <PostContext.Provider
+      value={{ something: state.something, changeSomething }}
+    >
       {props.children}
     </PostContext.Provider>
   );
