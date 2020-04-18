@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import "./NavigationBar.css";
+import NavigationBarIcons from "./NavigationBarIcons/NavigationBarIcons";
 
 const NavigationBar = () => {
   return (
@@ -30,10 +31,10 @@ const NavigationBar = () => {
             </Link>
           </Nav.Link>
         </Nav>
-
-        <p>Hello Nimzy</p>
-
-        <Button>hello there</Button>
+        <div className="User" style={{ marginRight: "8px" }}>
+          Hello Nimzy
+        </div>
+        <NavigationBarIcons />
       </Navbar.Collapse>
     </Navbar>
   );
