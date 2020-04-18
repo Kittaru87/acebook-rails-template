@@ -1,10 +1,8 @@
 import React from "react";
-import { shallow, mount } from "enzyme";
+import { mount } from "enzyme";
 import { findByTestAttr } from "../../../TestUtils/TestUtils";
 import Home from "./Home";
 import PostContext from "../../../context/Post/PostContext";
-
-const defaultProps = { something: "nima" };
 
 const setup = ({ something }) => {
   return mount(

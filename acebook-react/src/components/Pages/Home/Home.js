@@ -52,6 +52,11 @@ const Home = () => {
         are much much more simpler ways to deal with this sort of state change.
         This is to show the use of Context through a very basic example
       </h3>
+      <p>
+        So why even attempt context? to handle posts, of which could be large in
+        quantity, I'm preparing us to use context, which will handle data far
+        more efficiently
+      </p>
 
       <form onSubmit={handleSubmit}>
         <label>

@@ -9,7 +9,7 @@ const PostState = (props) => {
 
   const [state, dispatch] = useReducer(PostReducer, initialState);
 
-  const changeSomething = async (str) => {
+  const changeSomething = (str) => {
     dispatch({
       type: TYPES.CHANGE_SOMETHING,
       payload: str,
