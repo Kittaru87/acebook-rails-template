@@ -1,19 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Nav, Button } from "react-bootstrap";
+import "./NavigationBar.css";
 
 const NavigationBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" data-test="component-navBar">
       <Navbar.Brand href="#home">
-        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/" className="OverRideLink">
           Acebook
         </Link>
       </Navbar.Brand>
@@ -21,16 +15,17 @@ const NavigationBar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#home">
-            <Link to="/">Home</Link>
+            <Link to="/" className="OverRideLink">
+              Home
+            </Link>
           </Nav.Link>
           <Nav.Link href="#link">
-            <Link to="/profile">Profile</Link>
+            <Link to="/profile" className="OverRideLink">
+              Profile
+            </Link>
           </Nav.Link>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
+        <Button>hello there</Button>
       </Navbar.Collapse>
     </Navbar>
   );
