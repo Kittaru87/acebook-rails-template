@@ -1,0 +1,9 @@
+<%= link_to like_comments_path(comment_id: comment.id), method: :post, class: "like_comment_test" do %>
+  <% @likeComments = LikeComment.where(user_id: current_user.id, comment_id: comment.id).length %>
+  <% if @likeComments == 0 %>
+    <i class="fa fa-heart unlike"></i>
+  <% else %>
+    <i class="fa fa-heart like"></i>
+  <% end %>
+<% end %>
+<%= LikeComment.where(comment_id: comment.id).length %> Likes </p>
