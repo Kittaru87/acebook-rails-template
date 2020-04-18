@@ -5,17 +5,7 @@
   <div class="card-body bg-white">
     <div >
       <p><strong><%= comment.user.username %></strong>: <%= comment.comment %> -- <%= time_ago_in_words comment.created_at %> ago &nbsp
-
-      <%= link_to like_comments_path(comment_id: comment.id), method: :post, class: "like_comment_test" do %>
-        <% @likeComments = LikeComment.where(user_id: current_user.id, comment_id: comment.id).length %>
-        <% if @likeComments == 0 %>
-          <i class="fa fa-heart unlike"></i>
-        <% else %>
-          <i class="fa fa-heart like"></i>
-        <% end %>
-      <% end %>
-       <%= LikeComment.where(comment_id: comment.id).length %> Likes </p>
-
+      <%= render partial: "posts/comment_like_button_and_counter", locals: { comment: comment } %>
       <% if comment.user_id == current_user.id %>
         <% if comment.comment_time_limit %>
           <%= render partial: "posts/comment_buttons_within_time_limit", locals: { comment: comment } %> 
