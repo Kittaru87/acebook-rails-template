@@ -18,16 +18,13 @@
 
       <% if comment.user_id == current_user.id %>
         <% if comment.comment_time_limit %>
-          <%= link_to edit_comment_path(comment) do %>
-            <button type="button" class="btn btn-primary btn-sm edit-comment-btn">Edit comment</button>
-          <% end %> 
+          <%= render partial: "posts/comment_buttons_within_time_limit", locals: { comment: comment } %> 
         <% else %>
           <button type="button" class="btn btn-primary btn-sm edit-comment-btn" onclick="return alert('You can only edit posts within the first 10 minutes')">Edit comment</button> 
         <% end %>
           <%= link_to 'Delete comment', {controller: "comments", action: "destroy", id: comment.id}, data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-primary btn-sm" %>
       <% else %>
-        <button type="button" class="btn btn-primary btn-sm" onclick="return alert('You can only edit your own comment')">Edit Comment</button>
-        <button type="button" class="btn btn-primary btn-sm" onclick="return alert('You can only delete your own comment')">Delete Comment</button>
+        <%= render partial: "posts/comment_buttons_not_within_time_limit"%>
       <% end %>
     </div>
   </div>
