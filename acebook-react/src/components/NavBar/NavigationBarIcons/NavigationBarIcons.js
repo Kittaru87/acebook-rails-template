@@ -19,14 +19,22 @@ const NavigationBarIcons = () => {
           data-test="home-icon"
         />
       </Link>
-
-      <FontAwesomeIcon
-        icon={faPenSquare}
-        size="lg"
-        style={{ marginRight: spacing }}
-        data-test="edit-icon"
-      />
-      <FontAwesomeIcon icon={faArrowRight} size="lg" data-test="logout-icon" />
+      <Link to="">
+        <FontAwesomeIcon
+          icon={faPenSquare}
+          size="lg"
+          style={{ marginRight: spacing, color: "black" }}
+          data-test="edit-icon"
+        />
+      </Link>
+      <Link to="">
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          size="lg"
+          data-test="logout-icon"
+          style={{ color: "black" }}
+        />
+      </Link>
     </div>
   );
 };
