@@ -40,7 +40,11 @@ const PostState = (props) => {
 
   return (
     <PostContext.Provider
-      value={{ something: state.something, changeSomething }}
+      value={{
+        something: state.something,
+        posts: state.posts,
+        changeSomething,
+      }}
     >
       {props.children}
     </PostContext.Provider>
