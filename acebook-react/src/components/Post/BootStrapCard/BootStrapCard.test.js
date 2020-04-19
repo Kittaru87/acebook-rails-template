@@ -35,3 +35,15 @@ describe("BootStrapCard.js", () => {
     expect(cardMessageContainer.text()).toContain(defaultProps.post.message);
   });
 });
+
+test("does not throw error with expected props", () => {
+  const expectedProps = {
+    post: {
+      id: 1,
+      message: "this is a great post",
+      date_created: "2020-01-06",
+      date_updated: "2020-01-08",
+    },
+  };
+  checkProps(BootStrapCard, expectedProps);
+});

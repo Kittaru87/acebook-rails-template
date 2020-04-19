@@ -12,7 +12,11 @@ const Home = () => {
     <div data-test="home-container" className="container">
       <h2 className="text-center">Posts</h2>
       {posts.map((post) => (
-        <div key={post.id} data-test="post-individual" className="alignCenter">
+        <div
+          key={post.id}
+          data-test="post-individual"
+          className="alignCenter mt-4"
+        >
           <BootStrapCard post={post} />
         </div>
       ))}

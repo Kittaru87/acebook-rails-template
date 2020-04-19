@@ -26,6 +26,12 @@ const PostState = (props) => {
         date_created: "2020-02-04",
         date_updated: "2020-03-09",
       },
+      {
+        id: 4,
+        message: "This is a sad post by a sad person",
+        date_created: "2020-04-04",
+        date_updated: "2020-04-05",
+      },
     ],
   };
 
