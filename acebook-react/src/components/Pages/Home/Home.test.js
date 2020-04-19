@@ -43,12 +43,6 @@ describe("Home.js", () => {
     expect(homeContainer.length).toBe(1);
   });
 
-  test("renders post conatiner correctly", () => {
-    const wrapper = setup(state);
-    const postContainer = findByTestAttr(wrapper, "post-container");
-    expect(postContainer.length).toBe(1);
-  });
-
   test("renders correct amount of posts, in this case, 3", () => {
     const wrapper = setup(state);
     const postIndividual = findByTestAttr(wrapper, "post-individual");

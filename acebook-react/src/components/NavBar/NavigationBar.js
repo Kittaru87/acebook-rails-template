@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "./NavigationBar.css";
@@ -6,37 +6,45 @@ import NavigationBarIcons from "./NavigationBarIcons/NavigationBarIcons";
 
 const NavigationBar = () => {
   return (
-    <Navbar
-      style={{ minHeight: "65px" }}
-      bg="light"
-      expand="lg"
-      data-test="component-navBar"
-    >
-      <Navbar.Brand>
-        <Link to="/" className="OverRideLink NavBarBrand">
-          ACEBOOK
-        </Link>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Link
-            to="/profile"
-            className="OverRideLink"
-            style={{ margin: "10px" }}
-          >
-            Profile
+    <Fragment>
+      <div style={{ marginTop: "70px" }}></div>
+      <Navbar
+        style={{ minHeight: "65px" }}
+        bg="light"
+        expand="lg"
+        data-test="component-navBar"
+        className="fixed-top"
+      >
+        <Navbar.Brand>
+          <Link to="/" className="OverRideLink NavBarBrand">
+            ACEBOOK
           </Link>
-          <Link to="/about" className="OverRideLink" style={{ margin: "10px" }}>
-            About
-          </Link>
-        </Nav>
-        <div className="User" style={{ marginRight: "8px" }}>
-          Hello Nimzy
-        </div>
-        <NavigationBarIcons />
-      </Navbar.Collapse>
-    </Navbar>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Link
+              to="/profile"
+              className="OverRideLink"
+              style={{ margin: "10px" }}
+            >
+              Profile
+            </Link>
+            <Link
+              to="/about"
+              className="OverRideLink"
+              style={{ margin: "10px" }}
+            >
+              About
+            </Link>
+          </Nav>
+          <div className="User" style={{ marginRight: "8px" }}>
+            Hello Nimzy
+          </div>
+          <NavigationBarIcons />
+        </Navbar.Collapse>
+      </Navbar>
+    </Fragment>
   );
 };
 

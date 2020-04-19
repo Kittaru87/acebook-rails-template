@@ -1,0 +1,9 @@
+.headerCard{
+  background-color: #007bff;
+}
+
+.alignCenter {
+  display: flex;
+  justify-content: center;
+}
+
