@@ -1,11 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
+import "./Buttons.css";
 
 const Buttons = () => {
   const buttonSpacing = "1";
   const buttonSize = "sm";
   return (
-    <Fragment>
+    <div className="ButtonContainer">
       <Button
         variant="primary"
         size={buttonSize}
@@ -25,7 +26,7 @@ const Buttons = () => {
       >
         Delete
       </Button>
-    </Fragment>
+    </div>
   );
 };
 

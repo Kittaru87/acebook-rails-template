@@ -2,6 +2,10 @@
   background-color: #007bff;
 }
 
+.Background{
+  background-color: #18191A;
+}
+
 .alignCenter {
   display: flex;
   justify-content: center;

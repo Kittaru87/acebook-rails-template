@@ -9,8 +9,10 @@ const NavigationBar = () => {
     <Fragment>
       <div style={{ marginTop: "70px" }}></div>
       <Navbar
-        style={{ minHeight: "65px" }}
-        bg="light"
+        style={{
+          minHeight: "65px",
+          backgroundColor: "#242526",
+        }}
         expand="lg"
         data-test="component-navBar"
         className="fixed-top"
