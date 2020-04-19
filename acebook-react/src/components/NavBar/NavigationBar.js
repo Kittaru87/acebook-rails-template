@@ -20,8 +20,15 @@ const NavigationBar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Link to="/profile" className="OverRideLink">
+          <Link
+            to="/profile"
+            className="OverRideLink"
+            style={{ margin: "10px" }}
+          >
             Profile
+          </Link>
+          <Link to="/about" className="OverRideLink" style={{ margin: "10px" }}>
+            About
           </Link>
         </Nav>
         <div className="User" style={{ marginRight: "8px" }}>
