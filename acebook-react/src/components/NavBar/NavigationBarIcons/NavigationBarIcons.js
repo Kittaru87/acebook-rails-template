@@ -8,6 +8,7 @@ import {
 import { Link } from "react-router-dom";
 
 const NavigationBarIcons = () => {
+  const fontColor = "white";
   const spacing = "8px";
   return (
     <div data-test="component-icons">
@@ -15,7 +16,7 @@ const NavigationBarIcons = () => {
         <FontAwesomeIcon
           icon={faHome}
           size="lg"
-          style={{ marginRight: spacing, color: "black" }}
+          style={{ marginRight: spacing, color: fontColor }}
           data-test="home-icon"
         />
       </Link>
@@ -23,7 +24,7 @@ const NavigationBarIcons = () => {
         <FontAwesomeIcon
           icon={faPenSquare}
           size="lg"
-          style={{ marginRight: spacing, color: "black" }}
+          style={{ marginRight: spacing, color: fontColor }}
           data-test="edit-icon"
         />
       </Link>
@@ -32,7 +33,7 @@ const NavigationBarIcons = () => {
           icon={faArrowRight}
           size="lg"
           data-test="logout-icon"
-          style={{ color: "black" }}
+          style={{ color: fontColor }}
         />
       </Link>
     </div>

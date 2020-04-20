@@ -5,6 +5,7 @@ import "./NavigationBar.css";
 import NavigationBarIcons from "./NavigationBarIcons/NavigationBarIcons";
 
 const NavigationBar = () => {
+  const fontColor = "white";
   return (
     <Fragment>
       <div style={{ marginTop: "70px" }}></div>

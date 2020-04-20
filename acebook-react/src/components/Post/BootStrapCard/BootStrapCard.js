@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import PostButtons from "../Buttons/Buttons";
+import Commentinput from "../Comment/CommentInput/CommentInput";
 import PropTypes from "prop-types";
 
 const BootStrapCard = ({ post }) => {
@@ -19,16 +20,7 @@ const BootStrapCard = ({ post }) => {
           {post.message}
         </Card.Title>
         <PostButtons />
-        <form>
-          <textarea
-            placeholder="Write a comment..."
-            style={{
-              borderRadius: "20px",
-              width: "100%",
-              backgroundColor: "#3A3B3C",
-            }}
-          />
-        </form>
+        <Commentinput />
       </Card.Body>
     </Card>
   );
