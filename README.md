@@ -5,6 +5,8 @@ Contributors: [Jara Santamaria Martinez](https://github.com/jarasmar), [Sophia B
 
 # Acebook
 
+![acebook](https://raw.githubusercontent.com/Kittaru87/acebook-theUndefinedMethod/master/assets/posts_page.png)
+
 This is a group projected set my Makers Academy and delievered by:
 
 ~ **The Undefined Method** ~
