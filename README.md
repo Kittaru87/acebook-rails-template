@@ -1,34 +1,58 @@
-# AceBook
-
-~ Presented by **The Undefined Method** ~
-
-## Makers Academy - Week 8 (group project)
-
 [![Build Status](https://travis-ci.com/Kittaru87/acebook-theUndefinedMethod.svg?branch=master)](https://travis-ci.com/Kittaru87/acebook-theUndefinedMethod)
 [![Coverage Status](https://coveralls.io/repos/github/Kittaru87/acebook-theUndefinedMethod/badge.svg?branch=master)](https://coveralls.io/github/Kittaru87/acebook-theUndefinedMethod?branch=master)
 
 Contributors: [Jara Santamaria Martinez](https://github.com/jarasmar), [Sophia Bell](https://github.com/Kittaru87), [Rafa Hernandez](https://github.com/rafahg), [Nima Soufiani](https://github.com/Nimzyow)
 
-[Brief](#Brief) | [Setup](#Setup) |[Running the application](#Running-the-application) |[Running tests](#Running-tests) | [Specifications](#specifications) | [Planning](#planning) | [Installation Instructions](#installation-instructions) | [Tech stack](#tech-stack) | [Challenges](#challenges)
+# Acebook
 
-## `Brief`
+This is a group projected set my Makers Academy and delievered by:
 
-Work as a team to build a clone of Facebook
+~ **The Undefined Method** ~
 
-## `Setup`
+The task at hand was to add features through TDD based on the tickets our group gets.
 
-### To install dependencies
+## Table of content
 
-On the root of the project, run:
+- [Installation](#installation)
+- [Database setup](#database-setup)
+- [Running the application](#running-the-application)
+- [Running tests](#running-tests)
+- [Tools used during the project](#tools-used-during-the-project)
+- [Team who collaborated on this project](#team-who-collaborated-on-this-project)
+- [Future tickets](#future-tickets)
+
+## Makers Academy - Week 8 (group project)
+
+## Installation
+
+To install dependencies, go to the root of the project and run:
 
 ```
 $ bundle install
 ```
-this will install our dependencies
+this will install our dependencies for Rails.
 
-### To set up DataBase
+To see the React implementation of the front end, cd from root into acebook-react and run:
+```
+$ npm install
+```
+That's it!
 
-If you do not have Postgresql installed 
+## Database setup
+
+If you do not have Postgresql installed, first insure you have [HomeBrew](https://brew.sh) installed. Then in the terminal type:
+
+```
+$ brew install postgresql
+```
+After HomeBrew has finished downloading; follow on-screen installation instructions
+
+```
+$ brew services start postgresql
+```
+That's it for the Postgresql installation. 
+
+If you already have Postgresql installed, follow the instructions from here.
 
 On the root of the project create the database by running:
 
@@ -47,7 +71,7 @@ $ rails db:migrate
 
 Congratulations! Your database is now setup!
 
-### `Running the application`
+## Running the application
 
 To run the application, run the following command in the root of the project and enjoy :)
 
@@ -55,19 +79,25 @@ To run the application, run the following command in the root of the project and
 $ rails server
 ```
 
-### `running tests`
+If you want to see the React frontend implementation, from the root, move into the acebook-react directory and run:
+
+```
+$ npm start
+```
+Please keep in mind that the React implementation is still ungoing. The plan is to convert the Rails project we have done so far into an API and have React connect to it.
+
+## running tests
 
 To run the tests, make sure you are in the root of the project and run:
 
 ```
 $ rspec
 ```
+This will show you tests related to the rails application. To view tests related to the React, move into the acebook-react directory and in the terminal type:
 
-
-## First setup (if user does not have PostgreSQL installed)
-
-
-
+```
+npm test
+```
 
 ## Specifications
 
@@ -123,7 +153,7 @@ I want to be able to like a comment
 
 **Day 4**
 
-## `Tools used during the project`
+## Tools used during the project
 
 ### planning phase
 
@@ -134,7 +164,7 @@ I want to be able to like a comment
 - zoom
 - miro
 
-### Technologies
+## Technologies
 
 - Ruby on Rails
 - Capybara
@@ -145,11 +175,10 @@ I want to be able to like a comment
 - CSS/HTML
 - JavaScript
 - JQuery
+- React
+- Jest and Enzyme
 
-## Challenges
-
-
-### `Team who collaborated on this project`
+## Team who collaborated on this project
 
 ### and their daily roles
 
