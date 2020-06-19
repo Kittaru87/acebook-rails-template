@@ -6,10 +6,10 @@ class LikePostsController < ApplicationController
 
     if @likePost.empty?
       like
-      redirect_to posts_path
+      # redirect_to posts_path
     else
       unlike
-      redirect_to posts_path
+      # redirect_to posts_path
     end
   end
 

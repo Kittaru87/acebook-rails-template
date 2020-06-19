@@ -15,7 +15,7 @@ group :development do
 end
 
 gem 'travis'
-
+gem 'turbolinks'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'pg'

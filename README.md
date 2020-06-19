@@ -63,12 +63,6 @@ To run the tests, make sure you are in the root of the project and run:
 $ rspec
 ```
 
-
-## First setup (if user does not have PostgreSQL installed)
-
-
-
-
 ## Specifications
 
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
@@ -89,22 +83,22 @@ I want to be able to create an account
 
 As a registered user
 So that I can use my account
-I want to be able to log in
+I want to be able to log in and out
 
 As a registered user
 So I can share my experiences
 I want to be able to make a post
 
 As a registered user
-So I can make a comment on a post
+So I may share my opinion
 I want to be able to comment on a post
 
 As a registered user
-So I can like a post
+So I can show my appreciation
 I want to be able to like a post
 
 As a registered user
-So I can like a comment
+So I can show my appreciation
 I want to be able to like a comment
 ```
 
@@ -118,8 +112,14 @@ I want to be able to like a comment
 
 **Day 2**
 
+- Setting up user authentication via Devise, including Postgres databases.
+- Setting up Travis CI and its link to Heroku.
+- Including of some CSS to aid readability during development.
+
 **Day 3**
+
 - Deployment of [Heroku app](https://the-undefined-method.herokuapp.com/)
+- User table updated with username
 
 **Day 4**
 
@@ -145,9 +145,16 @@ I want to be able to like a comment
 - CSS/HTML
 - JavaScript
 - JQuery
+- Travis
+- Coveralls
 
 ## Challenges
-
+* Continuous deployment to Heroku proved tricky to maintain due to randomly expiring authentication IDs.
+* Trying to set up a Coveralls/CodeClimate to asses code maintainability has also proved difficult.
+* Due to the nature of pair programming and the number of tasks we had to complete, some members of the team did not have as much exposure to some areas of the project as others (for example, setting up of Travis/Heroku), but this was worked through by information sharing at the end of each day and linking resources in our Trello board.
+* We were all starting from zero when it came to rails so learning an entirely new framework while trying to complete this project was a challenge we took on together as a team.
+* We were unable to integrate the JQuery we were working on to stop the page refresh in time for our final presentation, although this will be something we look at in the future.
+* On a similar note we did not have enough time to expose our rails application as an API for a React frontend, but again, this is something we hope to achieve in the future.
 
 ### `Team who collaborated on this project`
 
